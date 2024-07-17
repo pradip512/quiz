@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Quiz-Form</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. Do you have regular bowl movements?</p>
+                <label><input type="radio" name="q1" value="yes"> Yes</label>
+                <label><input type="radio" name="q1" value="no"> No</label>
+            </div>
+            <div class="question">
+                <p>2. Do you get at least 7-8 hours of sleep every night?</p>
+                <label><input type="radio" name="q2" value="yes"> Yes</label>
+                <label><input type="radio" name="q2" value="no"> No</label>
+            </div class="question">
+            <p>3. Are you maintain your weight?</p>
+                <label><input type="radio" name="q3" value="yes"> Yes</label>
+                <label><input type="radio" name="q3" value="no"> No</label>
+            </div class="question">
+            <p>4. Do you often feel tired or lazy and exhausted?</p>
+                <label><input type="radio" name="q4" value="no"> Yes</label>
+                <label><input type="radio" name="q4" value="yes"> No</label>
+            </div class="question">
+            <p>5. Do you tend to have cracked lips?</p>
+                <label><input type="radio" name="q5" value="no"> Yes</label>
+                <label><input type="radio" name="q5" value="yes"> No</label>
+            </div class="question">
+            <p>6. Do you often suffer from colds and flu?</p>
+                <label><input type="radio" name="q6" value="no"> Yes</label>
+                <label><input type="radio" name="q6" value="yes"> No</label>
+            </div class="question">
+            <p>7. Do you often feel any pain in your body?</p>
+                <label><input type="radio" name="q7" value="no"> Yes</label>
+                <label><input type="radio" name="q7" value="yes"> No</label>
+            </div class="question">
+            <p>8. Do you eperience a strong sense of hunger?</p>
+                <label><input type="radio" name="q8" value="no"> Yes</label>
+                <label><input type="radio" name="q8" value="yes"> No</label>
+            </div class="question">
+            <p>9. Is your skin clear and glowing?</p>
+                <label><input type="radio" name="q9" value="yes"> Yes</label>
+                <label><input type="radio" name="q9" value="no"> No</label>
+            <!-- Add more questions similarly -->
+            <div class="question">
+                <p>10. Do you often feel stressed, sad and think too much negative thoughts?</p>
+                <label><input type="radio" name="q10" value="no"> Yes</label>
+                <label><input type="radio" name="q10" value="yes"> No</label>
+            </div>
+            <button type="button" onclick="calculateScore()">Submit</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
